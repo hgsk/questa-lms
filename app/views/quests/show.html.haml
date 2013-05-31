@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @quest.title
+%p
+  %b Owner:
+  = @quest.owner
+%p
+  %b Description:
+  = @quest.description
+%p
+  %b Cooperators:
+  = @quest.cooperators
+
+= link_to 'Edit', edit_quest_path(@quest)
+\|
+= link_to 'Back', quests_path
