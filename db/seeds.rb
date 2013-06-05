@@ -16,3 +16,10 @@ puts 'DEFAULT USERS'
 user = User.create! :name => ENV['ADMIN_NAME'].dup, :email => ENV['ADMIN_EMAIL'].dup, :password => ENV['ADMIN_PASSWORD'].dup, :password_confirmation => ENV['ADMIN_PASSWORD'].dup
 puts 'user: ' << user.name
 user.add_role :admin
+
+# Verbs https://registry.tincanapi.com/#home/verbs
+puts 'VERBS'
+YAML.load(ENV['VERBS']).each do |verb|
+	puts verb
+end
+

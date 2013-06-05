@@ -1,7 +1,6 @@
-class Quest
+class Quest < Resource
   include Mongoid::Document
-  field :title, type: String
-  belongs_to :owner, class_name: 'User', inverse_of: :quest
-  field :description, type: String
-  embeds_many :cooperators, class_name: 'User', inverse_of: :quest
+	field :title, type: String
+	field :expire_date, type: TimeWithZone 
+	field :content_url, type: String
 end

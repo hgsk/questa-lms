@@ -39,3 +39,5 @@ gem "binding_of_caller", ">= 0.7.1", :group => :development, :platforms => [:mri
 
 # debug
 gem "pry-rails"
+
+gem "public_activity"
