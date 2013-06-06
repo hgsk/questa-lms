@@ -1,1 +1,20 @@
-%h3 Home
+- 3.times do
+  .row
+  .large-2.columns.small-3
+    = image_tag "hoge.png"
+  .large-10.columns
+    %p
+      %strong Hello
+      Bacon psum
+    %ul.inline-list 
+      %li
+        = link_to "Reply","#"
+      %li
+        = link_to "Share","#"
+    %h6 Responses
+    .row
+      .large-2.columns.small-3
+        = image_tag "hoge.png"
+      .large-10.columns
+        p Bacon ipsum dolor sit amet nulla ham qui
+

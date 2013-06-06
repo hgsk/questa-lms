@@ -14,7 +14,27 @@
       %nav
         = render 'layouts/navigation'
         = render 'layouts/messages'
-      #main{:role => "main"}
-        = yield
-      %footer
+      .row
+        .large-3.columns
+          .panel
+            = link_to image_tag("fuga.png"), "#"
+            %h5
+              = link_to current_user.name,"#"
+            .section-container.vertical-nav{:data=>{:section=>"",:options=>"deep_linking: false; one_up: true"}} fuga
+            %section.section
+              %h5.title
+                = link_to "Section 1", "#"
+              %h5.title
+                = link_to "Section 2", "#"
+              %h5.title
+                = link_to "Section 3", "#"
+        .large-6.columns
+          #main{:role => "main"}
+            = yield
+        %aside.large-3.columns.hide-for-small
+          %p
+            image_tag "ad"
+          %p
+            image_tag "ad"
+    %footer
     / ! end of #container
