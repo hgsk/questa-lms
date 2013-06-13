@@ -4,6 +4,7 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
+  gem 'foundation-icons-sass-rails'
 end
 gem 'jquery-rails'
 gem "thin", ">= 1.5.0", :group => [:development, :test]
@@ -41,3 +42,4 @@ gem "binding_of_caller", ">= 0.7.1", :group => :development, :platforms => [:mri
 gem "pry-rails"
 
 gem "public_activity"
+

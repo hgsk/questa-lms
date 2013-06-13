@@ -1,20 +1,22 @@
 - 3.times do
   .row
   .large-2.columns.small-3
-    = image_tag "hoge.png"
+    = image_tag "avatar.png"
   .large-10.columns
     %p
-      %strong Hello
+      %strong Name
       Bacon psum
     %ul.inline-list 
       %li
-        = link_to "Reply","#"
+        = link_to "Re","#"
       %li
-        = link_to "Share","#"
-    %h6 Responses
+        = link_to "Good","#"
+      %li
+        = link_to "Share","#", :class=>"fc-webicon facebook"
+    %h6 Res
     .row
       .large-2.columns.small-3
-        = image_tag "hoge.png"
+        = image_tag "avatar.png"
       .large-10.columns
-        p Bacon ipsum dolor sit amet nulla ham qui
+        awesome! this is a good solution.
 
