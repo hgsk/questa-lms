@@ -1,17 +1,22 @@
 %p#notice= notice
 
-%p
-  %b Title:
+.panel.callout
+  %p Title:
   = @quest.title
-%p
-  %b Owner:
-  = @quest.owner
-%p
-  %b Description:
+  %p Description:
   = @quest.description
+  %p Cooperators:
+  // TODO show cooperators' avatar list
+  = @quest.cooperators.count||0
+  %p
+    =image_tag "img.gif", :size=>"120x80"
 %p
-  %b Cooperators:
-  = @quest.cooperators
+  %b Res:
+- 3.times do
+  .panel
+    %p
+      %b hgsk: 
+      I solved in 10 minutes !
 
 = link_to 'Edit', edit_quest_path(@quest)
 \|

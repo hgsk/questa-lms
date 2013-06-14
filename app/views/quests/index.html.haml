@@ -1,24 +1,18 @@
-%h1 Listing quests
+%h1 Quests
 
 %table
   %tr
     %th Title
-    %th Owner
-    %th Description
-    %th Cooperators
-    %th
+    %th Coops
     %th
     %th
 
   - @quests.each do |quest|
     %tr
       %td= quest.title
-      %td= quest.owner
-      %td= quest.description
-      %td= quest.cooperators
+      %td= quest.cooperators.count
       %td= link_to 'Show', quest
       %td= link_to 'Edit', edit_quest_path(quest)
-      %td= link_to 'Destroy', quest, :method => :delete, :data => { :confirm => 'Are you sure?' }
 
 %br
 

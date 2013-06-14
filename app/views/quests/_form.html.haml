@@ -3,7 +3,9 @@
 
   .form-inputs
     = f.input :title
-    = f.input :description
+    = f.input :description, as: :text
+    = f.input :expire_date, as: :date
+    = f.input :attachment, as: :file
 
   .form-actions
     = f.button :submit

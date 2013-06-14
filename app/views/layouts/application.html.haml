@@ -24,11 +24,11 @@
             .section-container.vertical-nav{:data=>{:section=>"",:options=>"deep_linking: false; one_up: true"}} hello.
             %section.section
               %h5.title
-                = link_to "Section 1", "#"
+                = link_to "Activity", "#", :class=>"has_tip", :title=>"Remind All Your Learning Activity."
               %h5.title
-                = link_to "Section 2", "#"
+                = link_to "Scoresheet", "#", :class=>"has_tip", :title=>"Check Your Score."
               %h5.title
-                = link_to "Section 3", "#"
+                = link_to "Social", "#", :class=>"has_tip", :title=>"Manage Your Social Learning Network"
         .large-6.columns
           #main{:role => "main"}
             = yield
