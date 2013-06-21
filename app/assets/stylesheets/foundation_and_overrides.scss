@@ -1206,3 +1206,18 @@ $em-base: 16px !default;
 // $topbar-media-query: "only screen and (min-width: "#{$topbar-breakpoint}")";
 
 @import 'foundation';
+a img{
+	border: 1px solid black;
+}
+
+a img.avatar {
+	border : 1px solid black;
+	width: 48px;
+	height: 48px;
+}
+img.thumbnail{
+	background: #eee;
+	border: 1px solid #ddd;
+	width:480px;
+	height:320px;
+}

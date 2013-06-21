@@ -1,22 +1,37 @@
-- 3.times do
+- 100.times do
   .row
   .large-2.columns.small-3
-    = image_tag "avatar.png"
+    = link_to image_tag( "avatar.png", :class=>"avatar" )
   .large-10.columns
     %p
-      %strong Name
-      Bacon psum
-    %ul.inline-list 
+      %strong Elementary Math III
+      %div
+        =image_tag "#", :class=>"thumbnail"
+        Lorem ipusmLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum ?
+        %ol
+          %li choice A
+          %li choice B
+          %li choice C
+    %ul.inline-list
       %li
-        = link_to "Re","#"
+        =link_to "#PrimaryTag","#", :class=>"label"
+      -4.times do
+        %li
+          =link_to "#Math","#", :class=>"label secondary"
+
+    %ul.button-group.even-3
       %li
-        = link_to "Good","#"
+        = link_to "Re","#", :class=>"button"
       %li
-        = link_to "Share","#", :class=>"fc-webicon facebook"
+        = link_to "Good","#", :class=>"button"
+      %li
+        = link_to "Share","#", :class=>"button"
     %h6 Res
     .row
       .large-2.columns.small-3
-        = image_tag "avatar.png"
+        = link_to image_tag "avatar.png", :class=>"avatar"
       .large-10.columns
+        May be Choice B ?
         awesome! this is a good solution.
+    %hr
 
