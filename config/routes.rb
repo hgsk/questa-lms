@@ -1,4 +1,8 @@
 Lms::Application.routes.draw do
+	resources :notifications
+
+  get "activity/index"
+
   resources :quests
 
 

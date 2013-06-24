@@ -1,6 +1,10 @@
 # Quest is similar to Board on BBS.
 class Quest < Resource
   include Mongoid::Document
+
+	include PublicActivity::Model
+	tracked
+
 	field :title, type: String
 	field :description, type: String
 	field :expire_date, type: Time

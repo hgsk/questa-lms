@@ -3,3 +3,8 @@
 
 en:
   hello: "Hello world"
+  activity:
+    entry:
+      create:  'Entry'
+      update:  'Someone'
+      destroy: 'Some'
