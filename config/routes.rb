@@ -2,7 +2,7 @@ Lms::Application.routes.draw do
 
 	resources :records
 
-	resources :notifications
+	resources :notifications, path: :timeline
 
   get "activity/index"
 

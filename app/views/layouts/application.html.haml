@@ -19,6 +19,9 @@
           #main{:role => "main"}
             = yield
         %aside.large-4.columns.hide-for-small
+
+          .panel
+            ad
           - if current_user
             .panel
               = link_to image_tag("portrait.png"), "#"
@@ -29,12 +32,12 @@
               .section-container.vertical-nav{:data=>{:section=>"",:options=>"deep_linking: false; one_up: true"}} 
               %section.section
                 %h5.title
-                  = link_to "Activity", notifications_path, :class=>"has_tip", :title=>"Remind All Your Learning Activity."
+                  = link_to "Timeline", notifications_path, :class=>"has_tip", :title=>"Remind All Your Learning Activity."
                 %h5.title
-                  = link_to "Record", "#", :class=>"has_tip", :title=>"Check Your Score."
+                  = link_to "Record", records_path, :class=>"has_tip", :title=>"Check Your Score."
                 %h5.title
-                  = link_to "Social", "#", :class=>"has_tip", :title=>"Manage Your Social Learning Network"
-            .panel.callout
+                  = link_to "Quest", quests_path, :class=>"has_tip", :title=>"Manage Your Social Learning Network"
+            .panel
               ToDo
               %ul
                 %li Math p.12 - p.14
@@ -43,8 +46,5 @@
               Notice1
             .panel.callout
               Notice1
-
-          .panel
-            Ad
     %footer
     / ! end of #container
