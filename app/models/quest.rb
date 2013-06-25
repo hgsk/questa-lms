@@ -1,9 +1,7 @@
 # Quest is similar to Board on BBS.
 class Quest < Resource
-  include Mongoid::Document
 
-	include PublicActivity::Model
-	tracked
+	validates_presence_of :title
 
 	field :title, type: String
 	field :description, type: String
