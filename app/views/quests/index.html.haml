@@ -1,19 +1,15 @@
-%h1 Quests
+%h2 Quests
 
-%table
-  %tr
-    %th Title
-    %th Coops
-    %th
-    %th
-
+%ul.hoge
   - @quests.each do |quest|
-    %tr
-      %td= quest.title
-      %td= quest.cooperators.count
-      %td= link_to 'Show', quest
-      %td= link_to 'Edit', edit_quest_path(quest)
-
-%br
+    %li.panel
+      %p= quest.title
+      %p
+        member:
+        = quest.cooperators.count
+      -# TODO restrict for his quest.
+      %p
+        = link_to 'Show', quest
+        = link_to 'Edit', edit_quest_path(quest)
 
 = link_to 'New Quest', new_quest_path

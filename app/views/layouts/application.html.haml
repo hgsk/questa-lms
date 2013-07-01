@@ -32,6 +32,8 @@
               .section-container.vertical-nav{:data=>{:section=>"",:options=>"deep_linking: false; one_up: true"}} 
               %section.section
                 %h5.title
+                  = link_to "Home", root_path, :class=>"has_tip", :title=>"Check Your Score."
+                %h5.title
                   = link_to "Timeline", notifications_path, :class=>"has_tip", :title=>"Remind All Your Learning Activity."
                 %h5.title
                   = link_to "Record", records_path, :class=>"has_tip", :title=>"Check Your Score."

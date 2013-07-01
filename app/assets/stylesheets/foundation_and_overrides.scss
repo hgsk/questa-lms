@@ -4,7 +4,7 @@
 
 // The default font-size is set to 100% of the browser style sheet (usually 16px)
 // for compatibility with brower-based text zoom or user-set defaults.
-$base-font-size: 100% !default;
+$base-font-size: 70% !default;
 
 // $base-line-height is 24px while $base-font-size is 16px
 // $base-line-height: 150%;
@@ -111,7 +111,7 @@ $em-base: 16px !default;
 // Maximum number of block grid elements per row
 
 // $block-grid-elements: 12;
-// $block-grid-default-spacing: 10px;
+$block-grid-default-spacing: emCalc(20px);
 
 // Enables media queries for block-grid classes. Set to false if writing semantic HTML.
 
